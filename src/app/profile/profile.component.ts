@@ -7,9 +7,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  userProfile: any;
+  repos: any;
+  followers: any;
+  following: any;
+  username: string;
+  notFound = false;
 
-  ngOnInit(): void {
+  constructor(private service: ProfileService) { }
+
+  searchUser() {
+    this.service.updateFields(this.username);
+    this.service.getProfileData()
+      .subscribe((profile: any) => {
+      
+        this.userProfile = profile;
+      }, (error: any) => {
+        this.notFound = !this.notFound;
+      });
+  
+    this.username = '';
+
+    this.service.getRepoData()
+      .subscribe((repos: any) => {
+        this.repos = repos;
+        
+      });
+
+    this.service.getFollowers()
+      .subscribe((followers: any) => {
+        this.followers = followers;
+      })
+
+    this.service.getFollowing()
+      .subscribe((following: any) => {
+        this.following = following;
+      })
+  }
+
+  ngOnInit() {
   }
 
 }
