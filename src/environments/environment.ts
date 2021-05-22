@@ -5,6 +5,10 @@
 export const environment = {
   production: false,
   api_key:"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",
+  token: "string",
+  clientId: "string",
+  clientSecret: "string"
+
 };
 
 /*

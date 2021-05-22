@@ -20,33 +20,29 @@ export class ProfileComponent implements OnInit {
   searchUser() {
     this.service.updateFields(this.username);
     this.service.getProfileData()
-      .subscribe((profile: any) => {
-      
+      .subscribe(profile => {
         this.userProfile = profile;
-      }, (error: any) => {
+      }, error => {
         this.notFound = !this.notFound;
       });
-  
     this.username = '';
 
     this.service.getRepoData()
-      .subscribe((repos: any) => {
+      .subscribe(repos => {
         this.repos = repos;
-        
       });
 
     this.service.getFollowers()
-      .subscribe((followers: any) => {
+      .subscribe(followers => {
         this.followers = followers;
       })
 
     this.service.getFollowing()
-      .subscribe((following: any) => {
+      .subscribe(following => {
         this.following = following;
       })
   }
 
   ngOnInit() {
   }
-
 }
