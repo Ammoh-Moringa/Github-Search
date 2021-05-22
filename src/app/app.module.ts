@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { DateCreatedPipe } from './date-created.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     NavbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DateCreatedPipe
   ],
   imports: [
     BrowserModule,
