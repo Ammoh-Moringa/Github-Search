@@ -9,6 +9,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { DateCreatedPipe } from './date-created.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     ProfileComponent,
     NavbarComponent,
     NotFoundComponent,
-    DateCreatedPipe
+    DateCreatedPipe,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
