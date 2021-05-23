@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 import { User } from '../user';
 
 @Component({
@@ -21,12 +22,15 @@ export class LandingPageComponent implements OnInit {
      }
    )
   }
-  constructor() { }
+  constructor(public httpServiceService:HttpService) { }
 
   ngOnInit() {
     
-    this.searchUserName('juma-moringa');
+    this.searchUserName('Ammoh-Moringa');
   }
 
 }
+
+
+
 
