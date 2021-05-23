@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
 
 @Component({
   selector: 'app-landing-page',
@@ -20,7 +21,7 @@ export class LandingPageComponent implements OnInit {
      }
    )
   }
-  constructor(public httpServiceService:HttpService) { }
+  constructor() { }
 
   ngOnInit() {
     
