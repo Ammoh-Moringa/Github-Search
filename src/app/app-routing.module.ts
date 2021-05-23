@@ -5,7 +5,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   { path: 'search', component: ProfileComponent },
-  { path: '**', component: NotFoundComponent },
+  // { path: '**', component: NotFoundComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
