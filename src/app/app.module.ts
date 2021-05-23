@@ -10,6 +10,7 @@ import { DateCreatedPipe } from './date-created.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     NavbarComponent,
     NotFoundComponent,
     DateCreatedPipe,
-    LandingPageComponent
+    LandingPageComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
