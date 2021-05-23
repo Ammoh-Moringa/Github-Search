@@ -30,6 +30,7 @@ export class ProfileComponent implements OnInit {
     this.service.getRepoData()
       .subscribe(repos => {
         this.repos = repos;
+        console.log(repos);
       });
 
     this.service.getFollowers()
