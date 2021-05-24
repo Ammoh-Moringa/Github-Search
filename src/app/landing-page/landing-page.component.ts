@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
+
 import { User } from '../user';
 
 @Component({
@@ -15,10 +16,8 @@ export class LandingPageComponent implements OnInit {
    this.httpServiceService.findUser(username).then(
      ()=>{
        this.users = this.httpServiceService.users;
-       console.log(this.users);
      },
      (error: any)=>{
-       console.log(error)
      }
    )
   }

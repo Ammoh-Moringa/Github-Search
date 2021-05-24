@@ -40,9 +40,9 @@
                 <p *ngIf="userProfile.company" class="card-text"><i class="fas fa-briefcase"></i>
                   {{ userProfile.company }}</p>
                 <div class="badges">
-                    Followers: <span>{{ userProfile.followers }}</span> <br>
+                  Followers: <span>{{ userProfile.followers }}</span> <br>
 
-                    Following: <span >{{ userProfile.following }}</span>
+                  Following: <span>{{ userProfile.following }}</span>
                 </div>
               </div>
             </div>
@@ -52,10 +52,9 @@
     </div>
     <div class="col-lg-6">
       <div class="tab-content" id="nav-tabContent">
-
         <div class="tab-pane fade show active" id="repos" role="tabpanel" aria-labelledby="nav-home-tab">
           <div *ngFor="let repo of repos; index as i">
-            <div appCardHover class="card bottom-space">
+            <div appCardHover class="card p-3 mb-3 bottom-space">
               <div class="card-body">
                 <h3>{{ repo.name }} <i *ngIf="repo.fork" class="fas fa-code-branch fa-xs"></i> <span
                     style="font-size:12px; float:right; color:rgb(112, 167, 119); background-color: #393c40"

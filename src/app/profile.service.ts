@@ -6,10 +6,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ProfileService {
+  
   private username!: string;
   private token = environment.token;
   private clientId = environment.clientId;
   private clientSecret = environment.clientSecret;
+  
 
   constructor(private http: HttpClient) {}
 
