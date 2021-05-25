@@ -41,6 +41,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 5. Markdown
 6. Bootstrap
 ### Live Site
-View [live]()
+View [live](https://ammoh-moringa.github.io/Github-Search/)
 ### License
 This project is under the  [MIT](license) licence.
